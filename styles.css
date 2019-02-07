@@ -1,0 +1,149 @@
+:root {
+  --main-blue: #34569A;
+  --main-black: #373737;
+  --main-font: 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+header {
+  height: 90vh;
+  background-image: url('assets/main_bg.svg');
+  background-position: 85% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header nav {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  width: 100px;
+}
+
+header nav .links a {
+  color: var(--main-black);
+  text-decoration: none;
+  margin-right: 45px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+header nav .links a:last-child {
+  margin-right: 0;
+}
+
+header .text-wrapper {
+  height: 100%;
+  width: 60%;
+  padding: 0 80px 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .text-wrapper h1 {
+  font-size: 85px;
+  line-height: 80px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+header .text-wrapper h3 {
+  font-size: 26px;
+  font-weight: 300;
+  width: 80%;
+}
+
+main .servicios, main .nosotros, main .contacto {
+  padding: 100px 80px 50px;
+}
+
+main .servicios h3, main .nosotros h3, main .contacto h3 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+main .contacto {
+  padding-top: 0;
+  margin-top: -270px;
+  margin-bottom: 100px;
+}
+
+main .servicios p, main .contacto p {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+main .servicios .servicios-items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+main .servicios .servicios-items-wrapper .servicio-item {
+  width: 30%;
+  padding: 50px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+main .servicios .servicios-items-wrapper .servicio-item h5 {
+  color: var(--main-blue);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main .nosotros .container {
+  display: flex;
+} 
+
+main .nosotros .image-wrapper {
+  background-image: url('assets/us_bg.svg');
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 75%;
+  margin-left: -80px
+}
+
+main .nosotros .text-wrapper {
+  padding: 100px 0;
+  width: 50%;
+}
+
+main .nosotros .text-wrapper p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: var(--main-blue);
+  color: #fff;
+  padding: 15px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 69px;
+}
+
+footer a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}

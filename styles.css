@@ -81,6 +81,48 @@ main .contacto {
   margin-bottom: 100px;
 }
 
+main .contacto form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+main .contacto form div {
+  margin-bottom: 50px;
+}  
+
+main .contacto form input, main .contacto form textarea {
+  border: 0;
+  border-bottom: 1px solid rgba(148, 148, 148, 0.356);
+  width: 100%;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+main .contacto form input::placeholder, main .contacto form textarea::placeholder {
+  font-size: 22px;
+  color: rgba(148, 148, 148, 0.356);
+}
+
+main .contacto form input:focus, main .contacto form textarea:focus {
+  outline: 0;
+  border-bottom-color: var(--main-blue);
+  border-bottom-width: 2px;
+}
+
+main .contacto form button {
+  padding: 10px 50px;
+  color: #fff;
+  background-color: var(--main-blue);
+  font-size: 22px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
 main .servicios p, main .contacto p {
   font-size: 26px;
   font-weight: 300;
@@ -146,4 +188,106 @@ footer a {
   font-weight: 300;
   color: #fff;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  * {
+    text-align: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  header nav .links {
+    display: none;
+  }
+
+  header nav img {
+    width: 150px;
+}
+
+  header .text-wrapper {
+    width: 100%;
+    padding: 0 20px 50px;
+    justify-content: flex-start;
+  }
+
+  header .text-wrapper h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  header .text-wrapper h3 {
+    font-size: 20px;
+    font-weight: 300;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+  background-position: bottom right;
+  background-size: 150%;
+  height: 100vh;
+  background-image: url('assets/main_bg_mobile.svg');
+}
+
+main .servicios, main .nosotros, main .contacto {
+  padding: 50px 20px 30px;
+}
+
+main .servicios h3, main .nosotros h3, main .contacto h3 {
+  font-size: 35px;
+}
+
+main .servicios p, main .contacto p {
+  font-size: 18px;
+}
+
+main .servicios .servicios-items-wrapper {
+  flex-wrap: wrap;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+main .servicios .servicios-items-wrapper .servicio-item {
+  width: 100%;
+  margin: 0 auto 40px;
+  padding: 20px 30px 30px 30px;
+  width: 80%;
+}
+
+main .nosotros .container {
+  flex-direction: column;
+}
+
+main .nosotros .image-wrapper {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  order: 3;
+  height: 400px;
+}
+
+main .nosotros .text-wrapper {
+  width: 100%;
+  order: 1;
+  padding: 0;
+}
+
+main .contacto {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+main .contacto form {
+  width: 100%;
+  align-items: center;
+}
+footer {
+  padding: 15px 20px;
+}
+
 }
